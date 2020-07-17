@@ -2,6 +2,14 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import './App.css';
 import CharacterBuilder from './components/CharacterBuilder';
+import styled from 'styled-components'
+
+const AppStyle = styled.div`
+  font-family: helvetica;
+  border: 5px solid gold;
+  width: 80%;
+  margin: 0% 10%;
+`
 
 const App = () => {
   const swData = "https://swapi.dev/api/people/"
@@ -25,10 +33,9 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App">
-      <h1 className="Header">Characters</h1>
+    <AppStyle>
       <CharacterBuilder lore={data} />
-    </div>
+    </AppStyle>
   );
 }
 
