@@ -2,14 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import './App.css';
 import CharacterBuilder from './components/CharacterBuilder';
-import styled from 'styled-components'
-
-const AppStyle = styled.div`
-  font-family: helvetica;
-  border: 5px solid gold;
-  width: 80%;
-  margin: 0% 10%;
-`
+import AppStyle from './components/GeneralStyles'
 
 const App = () => {
   const swData = "https://swapi.dev/api/people/"

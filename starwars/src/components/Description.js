@@ -1,25 +1,9 @@
 import React from 'react';
-import styled from 'styled-components'
+import {DescriptionStyles} from './GeneralStyles'
+
 
 const Description = props => {
     const { data } = props
-
-const DescriptionStyles = styled.div`
-    background-color: black;
-    color: gold;
-    opacity: 0.8;
-
-    span {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-        font-style: italic;
-        margin: 2% 0%;
-    }
-
-`
 
     return (
         <DescriptionStyles>
