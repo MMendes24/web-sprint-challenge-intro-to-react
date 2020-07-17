@@ -15,16 +15,24 @@ const CharacterStyles = styled.div`
     align-items: center;
 
     h2 {
-        font-size:3rem;
+        font-size:2rem;
         font-weight: bold;
         text-transform: uppercase;
         margin: 2% 0%;
+    }
+
+    h3 {
+        font-size:1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 1% 0%;
     }
 `
 
     return (
         <CharacterStyles>
            <h2>{data.name}</h2>
+           <h3>Description</h3>
            {<Description data={data} key={data.id} />}
         </CharacterStyles>
     )

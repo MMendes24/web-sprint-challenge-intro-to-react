@@ -8,17 +8,28 @@ const DescriptionStyles = styled.div`
     background-color: black;
     color: gold;
     opacity: 0.8;
+
+    span {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-style: italic;
+        margin: 2% 0%;
+    }
+
 `
 
     return (
         <DescriptionStyles>
-           <p>Height: {data.height}</p>
-           <p>Mass: {data.mass}</p>
-           <p>Hair Color: {data.hair_color}</p>
-           <p>Skin Color: {data.skin_color}</p>
-           <p>Eye Color: {data.eye_color}</p>
-           <p>Birth Year: {data.birth_year}</p>
-           <p>Gender: {data.gender}</p>
+            <p><span>Height: </span>{data.height}</p>
+            <p><span>Mass: </span>{data.mass}</p>
+            <p><span>Hair Color: </span>{data.hair_color}</p>
+            <p><span>Skin Color: </span>{data.skin_color}</p>
+            <p><span>Eye Color: </span>{data.eye_color}</p>
+            <p><span>Birth Year: </span>{data.birth_year}</p>
+            <p><span>Gender: </span>{data.gender}</p>
         </DescriptionStyles>
     )
 };
