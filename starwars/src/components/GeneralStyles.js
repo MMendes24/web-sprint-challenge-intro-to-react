@@ -4,7 +4,7 @@ const AppStyle = styled.div`
   font-family: helvetica;
   border: 5px solid gold;
   width: 80%;
-  margin: 0% 10%;
+  margin: 2% 10%;
 `
 
 export const CharacterStyles = styled.div`
