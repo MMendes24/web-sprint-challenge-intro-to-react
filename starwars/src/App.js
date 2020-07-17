@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import './App.css';
+import CharacterBuilder from './components/CharacterBuilder';
 
 const App = () => {
   const swData = "https://swapi.dev/api/people/"
@@ -26,6 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      <CharacterBuilder lore={data} />
     </div>
   );
 }

@@ -1,16 +1,17 @@
 import React from 'react'
+import Character from './Character'
 
 const CharacterBuilder = (props) => {
     const { lore } = props;
 
     return (
-      <Div>
+      <div>
         {
-        CharacterBuilder.map(data => 
-        <Character data={lore} key={data.id}  />)
+        lore.map(lore => 
+        <Character data={lore} key={lore.id}  />)
         }
-      </Div>
+      </div>
     );
   };
   
-  export default Photos
+  export default CharacterBuilder
